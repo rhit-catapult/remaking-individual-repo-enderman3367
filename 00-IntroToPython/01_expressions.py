@@ -13,11 +13,13 @@ import math
 ###############################################################################
 # TODO 1: Smile
 ###############################################################################
+print("😊")
 
 ###############################################################################
 # TODO 2:
 #   Write a statement that prints your name
 ###############################################################################
+print("Assistant Python Programmer")
 
 
 ###############################################################################
@@ -35,11 +37,13 @@ import math
 #   and run the program, checking that what gets printed is what you expect.
 ###############################################################################
 
-# print()
-# print("_TODO 3:")
-# print("4 + 8 evaluates to:   ", 4 + 8)
-# print("7 * 10 evaluates to:  ", 7 * 10)
-# print("1.53 + 8 evaluates to:", 1.53 + 8)
+print()
+print("_TODO 3:")
+print("4 + 8 evaluates to:   ", 4 + 8)
+print("7 * 10 evaluates to:  ", 7 * 10)
+print("1.53 + 8 evaluates to:", 1.53 + 8)
+print("10 - 3 evaluates to:  ", 10 - 3)
+print("15 / 3 evaluates to:  ", 15 / 3)
 
 ###############################################################################
 # TODO: 4.
@@ -47,14 +51,14 @@ import math
 #   paying close attention to what gets printed.
 ###############################################################################
 
-# print()
-# print("_TODO 4:")
-# print("(4 + 2) * 3 evaluates to:", (4 + 2) * 3)
-# print("4 + (2 * 3) evaluates to:", 4 + (2 * 3))
-# print("4 + 2 * 3   evaluates to:", 4 + 2 * 3)
-# print("(4 - 2) + 3 evaluates to:", (4 - 2) + 3)
-# print("4 - (2 + 3) evaluates to:", 4 - (2 + 3))
-# print("4 - 2 + 3   evaluates to:", 4 - 2 + 3)
+print()
+print("_TODO 4:")
+print("(4 + 2) * 3 evaluates to:", (4 + 2) * 3)
+print("4 + (2 * 3) evaluates to:", 4 + (2 * 3))
+print("4 + 2 * 3   evaluates to:", 4 + 2 * 3)
+print("(4 - 2) + 3 evaluates to:", (4 - 2) + 3)
+print("4 - (2 + 3) evaluates to:", 4 - (2 + 3))
+print("4 - 2 + 3   evaluates to:", 4 - 2 + 3)
 
 ###############################################################################
 # TODO: 5.
@@ -62,13 +66,13 @@ import math
 #   paying close attention to what gets printed.
 ###############################################################################
 
-# print()
-# print("_TODO 5:")
-# print("2 ** 10  evaluates to:", 2 ** 10)
-# print("10 ** 2  evaluates to:", 10 ** 2)
-# print("2 ** 0.5  evaluates to:", 2 ** 0.5)
-# print("10 ** -2  evaluates to:", 10 ** -2)
-# print("10 ** -0.5  evaluates to:", 10 ** -0.5, "(do you see why?")
+print()
+print("_TODO 5:")
+print("2 ** 10  evaluates to:", 2 ** 10)
+print("10 ** 2  evaluates to:", 10 ** 2)
+print("2 ** 0.5  evaluates to:", 2 ** 0.5)
+print("10 ** -2  evaluates to:", 10 ** -2)
+print("10 ** -0.5  evaluates to:", 10 ** -0.5, "(do you see why?")
 
 ###############################################################################
 # TODO: 6.
@@ -81,8 +85,11 @@ import math
 #  _
 ###############################################################################
 
-# print()
-# print("_TODO 6:")
+print()
+print("_TODO 6:")
+print("(3 + 5) * 2 ** 2 evaluates to:", (3 + 5) * 2 ** 2)
+print("(10 - 4) / (2 + 1) evaluates to:", (10 - 4) / (2 + 1))
+print("2 ** (3 + 1) - 5 * 2 evaluates to:", 2 ** (3 + 1) - 5 * 2)
 
 ###############################################################################
 # Part 2: Exceptions: Syntax and Run-Time Errors.
@@ -101,9 +108,10 @@ import math
 #   and finally comment-out your statement to continue to the next _TODO.
 ###############################################################################
 
-# print()
-# print("_TODO 7:")
+print()
+print("_TODO 7:")
 # This is crazy!  Python will make no sense of it!
+# print("Missing closing parenthesis"
 
 ###############################################################################
 # TODO: 8.
@@ -115,9 +123,9 @@ import math
 #   Then comment-out the line that causes the run-time error.
 ###############################################################################
 
-# print()
-# print("_TODO 8:")
-# print("3 + 2 evaluates to:", 3 + 2)
+print()
+print("_TODO 8:")
+print("3 + 2 evaluates to:", 3 + 2)
 # print("3 / 0 evaluates to:", 3 / 0)
 
 ###############################################################################
@@ -130,8 +138,8 @@ import math
 #   and run the program again to see the result of running the line below it.
 ###############################################################################
 
-# print()
-# print("_TODO 9:")
+print()
+print("_TODO 9:")
 # print("3 / 'hello' evaluates to:", 3 / 'hello')
 
 ###############################################################################
@@ -142,8 +150,10 @@ import math
 #  _
 ###############################################################################
 
-# print()
-# print("_TODO 10:")
+print()
+print("_TODO 10:")
+# print(undefined_variable)
+# print("Hello" - 5)
 
 ###############################################################################
 # Part 3: Objects, Types, and Values.
@@ -156,19 +166,19 @@ import math
 #   and learning from any predictions that you got wrong
 ###############################################################################
 
-# print()
-# print("_TODO 11:")
-#
-# print("The type of   482      is:", type(482))
-# print("The type of   48.203   is:", type(48.203))
-# print('The type of   "blah blah blah"      is:', type("blah blah blah"))
-# print("The type of   'blah blah blah'      is:", type('blah blah blah'))
-# print("The type of   [4, 2, 9]      is:", type([4, 2, 9]))
-# print("The type of   (4, 2, 9)      is:", type((4, 2, 9)))
-# print("The type of   min     is:", type(min))
-# print("The type of   'min'   is:", type('min'))
-# print("The type of   min(4, 6, 2, 12, 10)    is:", type(min(4, 6, 2, 12, 10)))
-# print("The type of   min(4, 6, 2.0, 12, 10)  is:", type(min(4, 6, 2.0, 12, 10)))
+print()
+print("_TODO 11:")
+
+print("The type of   482      is:", type(482))
+print("The type of   48.203   is:", type(48.203))
+print('The type of   "blah blah blah"      is:', type("blah blah blah"))
+print("The type of   'blah blah blah'      is:", type('blah blah blah'))
+print("The type of   [4, 2, 9]      is:", type([4, 2, 9]))
+print("The type of   (4, 2, 9)      is:", type((4, 2, 9)))
+print("The type of   min     is:", type(min))
+print("The type of   'min'   is:", type('min'))
+print("The type of   min(4, 6, 2, 12, 10)    is:", type(min(4, 6, 2, 12, 10)))
+print("The type of   min(4, 6, 2.0, 12, 10)  is:", type(min(4, 6, 2.0, 12, 10)))
 
 
 ###############################################################################
@@ -186,12 +196,14 @@ import math
 #  type that results from division, even if both arguments are  int  objects?
 ###############################################################################
 
-# print()
-# print("_TODO 12:")
-# print("4.2 / 2.0 evaluates to:", 4.2 / 2.0)
-# print("4.2 / 2   evaluates to:", 4.2 / 2)
-# print("4 / 2     evaluates to:", 4 / 2)
-# print("3 / 2     evaluates to:", 3 / 2)
+print()
+print("_TODO 12:")
+print("5 + 3 * 2 - 1 evaluates to:", 5 + 3 * 2 - 1, "type:", type(5 + 3 * 2 - 1))
+print("5.0 + 3 * 2 - 1 evaluates to:", 5.0 + 3 * 2 - 1, "type:", type(5.0 + 3 * 2 - 1))
+print("4.2 / 2.0 evaluates to:", 4.2 / 2.0)
+print("4.2 / 2   evaluates to:", 4.2 / 2)
+print("4 / 2     evaluates to:", 4 / 2)
+print("3 / 2     evaluates to:", 3 / 2)
 
 ###############################################################################
 # TODO: 13.
@@ -202,10 +214,12 @@ import math
 #  until you understand what those operators do.
 ###############################################################################
 
-# print()
-# print("_TODO 13:")
-# print("17 // 5   evaluates to:", 17 // 5)
-# print("17 % 5    evaluates to:", 17 % 5)
+print()
+print("_TODO 13:")
+print("17 // 5   evaluates to:", 17 // 5)
+print("17 % 5    evaluates to:", 17 % 5)
+print("20 // 3   evaluates to:", 20 // 3)
+print("20 % 3    evaluates to:", 20 % 3)
 
 ###############################################################################
 # TODO: 14.
@@ -216,12 +230,14 @@ import math
 #  understand what the  +   and   *   operators do when applied to strings.
 ###############################################################################
 
-# print()
-# print("_TODO 14:")
-#
-# print("hello" + "goodbye girl")
-# print("big" * 20)
-# print(("hello " + "goodbye ") * 4)
+print()
+print("_TODO 14:")
+
+print("hello" + "goodbye girl")
+print("big" * 20)
+print(("hello " + "goodbye ") * 4)
+print("Python " + "is " + "awesome!")
+print("=" * 30)
 
 ###############################################################################
 # TODO: 15.
@@ -239,8 +255,11 @@ import math
 #  _
 ###############################################################################
 
-# print()
-# print("_TODO 15:")
+print()
+print("_TODO 15:")
+print("I'm not a bug, that's right!")
+print('What does "yarborough" mean?')
+print('I\'m on "pins and needles" about \'"\'\'.')
 
 ###############################################################################
 # Part 4: Names, Variables, and Assignment.
@@ -261,20 +280,28 @@ import math
 #   that you defined previously.
 ###############################################################################
 
-# print()
-# print("_TODO 16:")
-# first_program = "Hello, world!"
-# print(first_program)
+print()
+print("_TODO 16:")
+first_program = "Hello, world!"
+print(first_program)
 # print(greeting)
-#
-# greeting = "Hello, earthlings"
-# print(greeting)
-# print(first_program + (greeting * 2))
-#
-# n = 3
-# print(first_program * n)
+
+greeting = "Hello, earthlings"
+print(greeting)
+print(first_program + (greeting * 2))
+
+n = 3
+print(first_program * n)
 # n = 2 * first_program
 # print(n + greeting)
+
+# My own examples
+my_name = "Assistant"
+my_age = 25
+my_greeting = "Hi, I'm " + my_name
+print(my_greeting)
+combined = my_name + " is " + str(my_age) + " years old"
+print(combined)
 
 ###############################################################################
 # TODO: 17.
@@ -294,15 +321,15 @@ import math
 #   Finally, try out your own assignment statements that yield run-time errors.
 ###############################################################################
 
-# print()
-# print("_TODO 17:")
-# r = 0
-# s = -9
+print()
+print("_TODO 17:")
+r = 0
+s = -9
 # t = s / r
 # y = "oops" + s
 # u = math.sqrt(-2)
-# v = (-2) ** 0.5
-# print(v)
+v = (-2) ** 0.5
+print(v)
 
 ###############################################################################
 # TODO: 18.
@@ -314,14 +341,14 @@ import math
 #   and run again to check your predictions.
 ###############################################################################
 
-# print()
-# print("_TODO 18:")
-# a = 45
+print()
+print("_TODO 18:")
+a = 45
 # 45 = a
-# b = 10
-# c = b + 20
-# b = c
-# print(a, b, c)
+b = 10
+c = b + 20
+b = c
+print(a, b, c)
 
 ###############################################################################
 # TODO: 19.
@@ -329,17 +356,17 @@ import math
 #   Then run the program, checking to see whether your prediction is correct.
 ###############################################################################
 
-# print()
-# print("_TODO 19:")
-# x = 5
-# x = x + 1
-# print(x)
-#
-# x = x + 1
-# print(x)
-#
-# x = x + 1
-# print(x)
+print()
+print("_TODO 19:")
+x = 5
+x = x + 1
+print(x)
+
+x = x + 1
+print(x)
+
+x = x + 1
+print(x)
 
 ###############################################################################
 # TODO: 20.
@@ -348,13 +375,13 @@ import math
 #   Then run the program, checking to see whether your prediction is correct.
 ###############################################################################
 
-# print()
-# print("_TODO 20:")
-# x = 10
-# y = 75
-# x = y
-# y = x
-# print(x, y)
+print()
+print("_TODO 20:")
+x = 10
+y = 75
+x = y
+y = x
+print(x, y)
 
 ###############################################################################
 # TODO: 21.
@@ -371,8 +398,14 @@ import math
 #  _
 ###############################################################################
 
-# print()
-# print("_TODO 22:")
-# x = random.randint(1, 99)
-# y = random.randint(1, 99)
-# print(x, y)
+print()
+print("_TODO 21:")
+x = random.randint(1, 99)
+y = random.randint(1, 99)
+print(x, y)
+
+# Swap x and y using a temporary variable
+temp = x
+x = y
+y = temp
+print(x, y)

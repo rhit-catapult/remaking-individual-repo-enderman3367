@@ -6,7 +6,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 """
 
 ##############################################################################
-# TODO: 2. Read the code, then run it.
+# DONE: 2. Read the code, then run it.
 #   Make sure you understand WHY it prints what it does.
 #   ** ASK QUESTIONS IF ANY OF IT IS MYSTERIOUS TO YOU. **
 #   Once you understand the code completely, then change the _TODO_ to DONE.

@@ -9,6 +9,30 @@ import random
 # TODO: Possible member variables: screen, color, x, y, radius, speed_x, speed_y
 # TODO: Methods: __init__, draw, move
 
+class Ball:
+    def __init__(self, screen, color, x, y, radius, speed_x, speed_y):
+        self.screen = screen
+        self.color = color
+        self.x = x
+        self.y = y
+        self.radius = radius
+        self.speed_x = speed_x
+        self.speed_y = speed_y
+    
+    def move(self):
+        # Move the ball
+        self.x += self.speed_x
+        self.y += self.speed_y
+        
+        # Bounce off the walls
+        if self.x - self.radius <= 0 or self.x + self.radius >= self.screen.get_width():
+            self.speed_x = -self.speed_x
+        if self.y - self.radius <= 0 or self.y + self.radius >= self.screen.get_height():
+            self.speed_y = -self.speed_y
+    
+    def draw(self):
+        pygame.draw.circle(self.screen, self.color, (int(self.x), int(self.y)), self.radius)
+
 
 def main():
     pygame.init()
@@ -18,6 +42,7 @@ def main():
     clock = pygame.time.Clock()
 
     # TODO: Create an instance of the Ball class called ball1
+    ball1 = Ball(screen, pygame.Color('red'), 150, 150, 20, 3, 2)
 
     while True:
         for event in pygame.event.get():
@@ -28,7 +53,9 @@ def main():
         screen.fill(pygame.Color('gray'))
 
         # TODO: Move the ball
+        ball1.move()
         # TODO: Draw the ball
+        ball1.draw()
 
         pygame.display.update()
 
