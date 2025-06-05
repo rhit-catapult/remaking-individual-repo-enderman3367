@@ -1,20 +1,53 @@
 import random as rand
+import nltk
+from nltk.corpus import words
+
+def get_word_list():
+    """Get a list of words from NLTK, with fallback to manual list"""
+    try:
+        # Try to access the words corpus
+        word_list = words.words()
+        # Filter for words between 4-12 letters to make the game reasonable
+        filtered_words = [word for word in word_list if 4 <= len(word) <= 12 and word.isalpha()]
+        return filtered_words
+    except LookupError:
+        # If words corpus is not downloaded, try to download it
+        print("Downloading word database... this may take a moment.")
+        try:
+            nltk.download('words', quiet=True)
+            word_list = words.words()
+            filtered_words = [word for word in word_list if 4 <= len(word) <= 12 and word.isalpha()]
+            return filtered_words
+        except Exception as e:
+            print(f"Could not download NLTK words database: {e}")
+            print("Using fallback word list...")
+            # Fallback to original animal words if NLTK fails
+            return [
+                "jellyfish", "tiger", "snake", "horse",
+                "fish", "lion", "emu", "cat", "dog", "penguin", "turtle",
+                "elephant", "giraffe", "zebra", "monkey", "panda", "koala",
+                "kangaroo", "whale", "dolphin", "octopus", "shark", "eagle",
+                "falcon", "parrot", "owl", "rabbit", "fox", "wolf", "bear"
+            ]
+    except ImportError:
+        print("NLTK not installed. Using fallback word list...")
+        print("To install NLTK, run: pip install nltk")
+        # Fallback if NLTK is not installed
+        return [
+            "jellyfish", "tiger", "snake", "horse",
+            "fish", "lion", "emu", "cat", "dog", "penguin", "turtle",
+            "elephant", "giraffe", "zebra", "monkey", "panda", "koala",
+            "kangaroo", "whale", "dolphin", "octopus", "shark", "eagle",
+            "falcon", "parrot", "owl", "rabbit", "fox", "wolf", "bear"
+        ]
 
 def main():
     
-    # List of words to choose from
-    words = [
-        "jellyfish", "tiger", "snake", "horse",
-        "fish", "lion", "emu", "cat", "dog", "penguin", "turtle",
-        "elephant", "giraffe", "zebra", "monkey", "panda", "koala",
-        "kangaroo", "penguin", "turtle", "elephant", "giraffe", "zebra",
-        "monkey", "panda", "koala", "kangaroo", "penguin", "turtle",
-        "elephant", "giraffe", "zebra", "monkey", "panda", "koala",
-        "kangaroo", "penguin", "turtle", "elephant", "giraffe", "zebra",
-        "monkey", "panda", "koala", "kangaroo", "penguin", "turtle",
-    ]
+    # Get words from NLTK
+    words_list = get_word_list()
+    print(f"Loaded {len(words_list)} words from database")
 
-    secret_word = rand.choice(words).upper()
+    secret_word = rand.choice(words_list).upper()
     word_length = len(secret_word)
     
     # Initialize game state
